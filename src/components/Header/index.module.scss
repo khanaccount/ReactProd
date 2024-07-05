@@ -1,0 +1,87 @@
+@import "../../variables.scss";
+
+.header {
+  z-index: 5;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  gap: 24px;
+  padding: 16px 24px;
+  height: 88px;
+  background-color: $mainBlockColor;
+  border-bottom-left-radius: $borderRadius;
+  border-bottom-right-radius: $borderRadius;
+}
+
+.logo {
+  font-size: 32px;
+  min-width: 320px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.searchField,
+.auth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.searchFieldSvg svg,
+.searchFieldSvgFocused svg,
+.authSvg img,
+.crossSvg svg {
+  width: 25px;
+  height: 25px;
+}
+
+.crossSvg svg {
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.searchFieldSvgFocused {
+  cursor: pointer;
+}
+
+.searchFieldSvg,
+.searchFieldSvgFocused {
+  padding: 10px;
+}
+
+.searchFieldSvgFocused {
+  svg {
+    path {
+      stroke: black;
+    }
+  }
+}
+
+.searchField {
+  width: 100%;
+  height: 56px;
+  background-color: $backgroundColor;
+  border-radius: 100px;
+}
+
+.searchInput {
+  width: 100%;
+  outline: none;
+  border: none;
+  background-color: inherit;
+  font-weight: 700;
+  padding-right: 20px;
+  line-height: 18px;
+}
+
+.auth {
+  cursor: pointer;
+  background-color: $backgroundColor;
+  border-radius: 100px;
+  padding: 16px 20px;
+  gap: 8px;
+  width: 690px;
+  height: 56px;
+}

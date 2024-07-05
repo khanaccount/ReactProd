@@ -1,0 +1,28 @@
+@import "variables";
+@import "normalize";
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&display=swap");
+
+html,
+body,
+#root,
+.app {
+  height: 100%;
+  width: 100%;
+  color: $mainTextColor;
+  background-color: $backgroundColor;
+}
+
+* {
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+}
+
+.container {
+  max-width: 1920px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
